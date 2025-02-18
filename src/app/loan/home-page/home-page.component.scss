@@ -117,9 +117,73 @@
   }
 }
 
-
 @media screen and (max-width: 999px) {
-  .card{
+  .card {
     margin-top: 30px;
+  }
+}
+.carausal-header {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: blue;
+}
+.carousal-testimonial {
+  .testimonial-card {
+    background-color: #f8fafb;
+    border-radius: 25px;
+    margin: 10px 15px;
+    height: 350px;
+    img {
+      width: 75px;
+    }
+    h5 {
+      font-weight: 400;
+      margin-bottom: 0px;
+      padding: 10px 0px;
+    }
+    p {
+      font-weight: 12px;
+      font-style: italic;
+      // color: #9C9C9C;
+    }
+  }
+  owl-carousel-o {
+    .owl-theme {
+      .owl-nav {
+        .owl-prev {
+          position: absolute !important;
+          left: 30px !important;
+          bottom: -45px !important;
+          background-color: transparent;
+          img {
+            background: #f2f5f8;
+            padding: 10px 12px;
+            border-radius: 25px;
+          }
+        }
+        .owl-next {
+          position: absolute;
+          right: 30px;
+          bottom: -45px;
+          background-color: transparent;
+          img {
+            background: #f2f5f8;
+            padding: 10px 12px;
+            border-radius: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.avtar {
+  img {
+    border-radius: 73px;
+    width: 150px;
+    margin: 15px;
+    height: 150px;
   }
 }

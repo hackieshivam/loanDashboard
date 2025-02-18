@@ -1,46 +1,19 @@
-<div
-  id="carouselExample"
-  class="carousel slide"
-  data-bs-ride="carousel"
-  data-bs-interval="1000"
->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img
-        src="/assets/icons/home-loan.png"
-        class="d-block w-100"
-        alt="Slide 1"
-      />
+      <img src="/assets/icons/home-loan.png" class="d-block w-100" alt="Slide 1" />
     </div>
     <div class="carousel-item">
-      <img
-        src="/assets/icons/chrted_accountent.png"
-        class="d-block w-100"
-        alt="Slide 2"
-      />
+      <img src="/assets/icons/chrted_accountent.png" class="d-block w-100" alt="Slide 2" />
     </div>
     <div class="carousel-item">
-      <img
-        src="/assets/icons/personal-loan.png"
-        class="d-block w-100"
-        alt="Slide 3"
-      />
+      <img src="/assets/icons/personal-loan.png" class="d-block w-100" alt="Slide 3" />
     </div>
   </div>
-  <button
-    class="carousel-control-prev"
-    type="button"
-    data-bs-target="#carouselExample"
-    data-bs-slide="prev"
-  >
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
   </button>
-  <button
-    class="carousel-control-next"
-    type="button"
-    data-bs-target="#carouselExample"
-    data-bs-slide="next"
-  >
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
   </button>
 </div>
@@ -129,12 +102,7 @@
         <div class="card h-100">
           <div class="card-body text-center">
             <div class="icon mb-3">
-              <img
-                src="/assets/icons/team.png"
-                alt="Dedicated Specialists"
-                class="img-fluid"
-                width="60px"
-              />
+              <img src="/assets/icons/team.png" alt="Dedicated Specialists" class="img-fluid" width="60px" />
             </div>
             <h3>Dedicated Specialists</h3>
             <p class="card-text">
@@ -147,12 +115,7 @@
         <div class="card h-100">
           <div class="card-body text-center">
             <div class="icon mb-3">
-              <img
-                src="/assets/icons/success-story.png"
-                alt="Success Stories Rating"
-                class="img-fluid"
-                width="60px"
-              />
+              <img src="/assets/icons/success-story.png" alt="Success Stories Rating" class="img-fluid" width="60px" />
             </div>
             <h3>Success Stories Rating</h3>
             <p class="card-text">
@@ -166,12 +129,7 @@
         <div class="card h-100">
           <div class="card-body text-center">
             <div class="icon mb-3">
-              <img
-                src="/assets/icons/appraisal.png"
-                alt="No Front Appraisal Fees!"
-                class="img-fluid"
-                width="60px"
-              />
+              <img src="/assets/icons/appraisal.png" alt="No Front Appraisal Fees!" class="img-fluid" width="60px" />
             </div>
             <h3>No front Appraisal Fees!</h3>
             <p class="card-text">
@@ -182,5 +140,22 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
+<div class="carausal-header">
+  <div class="col-lg-12 carousal-testimonial">
+    <owl-carousel-o [options]="testimonialSlider">
+      <ng-template *ngFor="let logo of lifePlans['partner-say']" carouselSlide>
+
+        <div class="testimonial-card">
+          <h5>{{ logo["partner-name"] }}</h5>
+          <p>{{ logo["partner-view"] }}</p>
+        </div>
+        <div class="avtar">
+          <img src="{{ logo['partner-image'] }}" alt="{{ logo['partner-name'] }}" />
+
+        </div>
+      </ng-template>
+    </owl-carousel-o>
   </div>
 </div>
